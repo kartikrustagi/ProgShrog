@@ -1,0 +1,4 @@
+class StackException extends Exception
+{
+}
+

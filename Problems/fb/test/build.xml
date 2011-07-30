@@ -1,0 +1,10 @@
+<project default="compile" basedir=".">
+
+<property name="dir.src" value="."/>
+<property name="dir.build" value="."/>
+
+<target name="compile" description="Compilation of all source code.">
+<javac srcdir="${dir.src}" destdir="${dir.build}"/>
+</target>
+
+</project>
