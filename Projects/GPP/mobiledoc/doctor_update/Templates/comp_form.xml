@@ -1,0 +1,40 @@
+<xml>
+
+	<date>		
+		<day>None</day>
+		<month>None</month>
+		<year>None</year>
+	</date>
+	
+	<time>
+		<hours>None</hours>
+		<minutes>None</minutes>
+	</time>
+	
+	<gpsloc>
+		<x>10</x>
+		<y>20</y>
+	</gpsloc>
+	
+	<filename>None</filename>
+	
+	<kiosk_id>Hard Coded...to be handled later</kiosk_id>
+	<kiosk_address>again from config file</kiosk_address>
+	<form_id>1</form_id>
+	<topic>complaint form</topic>
+	<user_name>Assumed to be same as his/her name</user_name>
+	
+	<patient_info>
+		<name>None</name>
+		<age_sex>None</age_sex>
+		<occupation>None</occupation>
+		<pr_comp>None</pr_comp>
+		<med_taken>None</med_taken>
+		<b_s>None</b_s>
+		<upload_file_type>None</upload_file_type>
+		<upload_file_name>None</upload_file_name>
+		<upload_file>None</upload_file>
+	</patient_info>
+
+</xml>
+	

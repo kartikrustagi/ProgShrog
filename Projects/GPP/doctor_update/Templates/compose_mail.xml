@@ -1,0 +1,37 @@
+<xml>
+	<date>		
+		<day>None</day>
+		<month>None</month>
+		<year>None</year>
+	</date>
+	
+	<time>
+		<hours>None</hours>
+		<minutes>None</minutes>
+	</time>
+	
+	<gpsloc>
+		<x>10</x>
+		<y>20</y>
+	</gpsloc>
+	
+	<filename>None</filename>
+	
+	<kiosk_id>kanika.krikan@gmail.com</kiosk_id>
+	<kiosk_id_password>reset12355555</kiosk_id_password>
+	<kiosk_address>again from config file</kiosk_address>
+	
+	<form_id>4</form_id>
+	
+	<topic>compose mail</topic>
+	<user_name>Assumed to be same as his/her name</user_name>
+	
+	<body>
+		<to>None</to>
+		<subject>None</subject>
+		<details>None</details>
+		<upload_file_type>None</upload_file_type>
+		<upload_file_name>None</upload_file_name>
+		<upload_file>None</upload_file>	
+	</body>
+</xml>

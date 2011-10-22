@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><xml>
+       <date>
+               <day>30</day>
+               <month>3</month>
+               <year>2009</year>
+       </date>
+
+       <time>
+               <hours>15</hours>
+               <minutes>14</minutes>
+       </time>
+
+       <gpsloc>
+               <x>None</x>
+               <y>None</y>
+       </gpsloc>
+
+       <filename>Mon Mar 30 15:14:52 2009.xml</filename>
+
+       <kiosk_id>kanika.krikan@gmail.com</kiosk_id>
+       <kiosk_id_password>reset12355555</kiosk_id_password>
+       <kiosk_address>again from config file</kiosk_address>
+
+       <form_id>4</form_id>
+
+       <topic>compose mail</topic>
+       <user_name>Assumed to be same as his/her name</user_name>
+
+       <body>
+               <to>kashes911@gmail.com</to>
+               <subject>Reply to your medical complaint:</subject>
+               <details>
+
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Date: 30/3/2009
+Time: 14:12
+Kiosk Address: From config file
+
+From: kanika
+Age and Sex: 23
+Occupation: haj
+Present Complaints: jh
+Medication Taken: sbsjk
+Bladder and Sleeping: hahah
+</details>
+               <upload_file_type>file</upload_file_type>
+               <upload_file_name>None</upload_file_name>
+               <upload_file>None</upload_file>
+       </body>
+</xml>

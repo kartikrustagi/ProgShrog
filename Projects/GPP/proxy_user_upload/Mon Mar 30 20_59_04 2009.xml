@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><xml>
+
+	<date>		
+		<day>30</day>
+		<month>3</month>
+		<year>2009</year>
+	</date>
+	
+	<time>
+		<hours>20</hours>
+		<minutes>59</minutes>
+	</time>
+	
+	<gpsloc>
+		<x>10</x>
+		<y>20</y>
+	</gpsloc>
+	
+	<filename>Mon Mar 30 20:59:04 2009.xml</filename>
+	
+	<kiosk_id>kashes911@gmail.com</kiosk_id>
+	<kiosk_address>From config file</kiosk_address>
+	<kiosk_id_password>shimpooisold</kiosk_id_password>
+	<destination_id_doctor>shashi.rustagi2008@gmail.com</destination_id_doctor>
+	<form_id>1</form_id>
+	<topic>complaint form</topic>
+	<user_name>sdas-2</user_name>
+	
+	<patient_info>
+		<name>sdas-2</name>
+		<age_sex>asdsa</age_sex>
+		<occupation>adsd</occupation>
+		<pr_comp>sadas</pr_comp>
+		<med_taken>asdas</med_taken>
+		<b_s>asda</b_s>
+		<upload_file_type>file</upload_file_type>
+		<upload_file_name>None</upload_file_name>
+		<upload_file>None</upload_file>
+	</patient_info>
+
+</xml>

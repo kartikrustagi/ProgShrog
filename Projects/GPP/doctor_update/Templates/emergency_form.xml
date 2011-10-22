@@ -1,0 +1,34 @@
+<xml>
+	<date>
+		<day>None</day>
+		<month>None</month>
+		<year>None</year>
+	</date>
+	<time>
+		<hours>None</hours>
+		<minutes>None</minutes>
+	</time>
+	<gpsloc>
+		<x>10</x>
+		<y>20</y>
+	</gpsloc>	
+	
+	<filename>None</filename>
+	
+	<kiosk_id>Hard Coded...to be handled later</kiosk_id>
+	<kiosk_address>again from config file</kiosk_address>
+	<form_id>3</form_id>
+	<topic>emergency form</topic>
+	<user_name>Assumed to be same as his/her name</user_name>
+	
+	<details>
+		<name>None</name>
+		<address>None</address>
+		<phone>None</phone>
+		<sit_desc>None</sit_desc>
+		<blood_loss>None</blood_loss>
+		<concious>None</concious>
+		<loabp>None</loabp>
+		<avgi>None</avgi>
+	</details>
+</xml>

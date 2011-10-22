@@ -1,0 +1,76 @@
+Index: evinceed/backend/comics/comics-document.c
+===================================================================
+--- evinceed/backend/comics/comics-document.c	(revision 3065)
++++ evinceed/backend/comics/comics-document.c	(working copy)
+@@ -144,6 +144,12 @@
+ 		list_files_command = 
+ 			g_strdup_printf ("zipinfo -1 -- %s", quoted_file);
+ 		comics_document->regex_arg = TRUE;
++	} else if (!strcmp (mime_type, "application/x-cb7")) {
++		comics_document->extract_command =
++			g_strdup ("7zr x -so");
++		list_files_command = 
++			g_strdup_printf ("7zr l -- %s", quoted_file);
++		comics_document->regex_arg = TRUE;
+ 	}
+ 
+ 	g_object_unref (file_info);
+Index: evinceed/backend/comics/comicsdocument.evince-backend.in
+===================================================================
+--- evinceed/backend/comics/comicsdocument.evince-backend.in	(revision 3065)
++++ evinceed/backend/comics/comicsdocument.evince-backend.in	(working copy)
+@@ -1,4 +1,4 @@
+ [Evince Backend]
+ Module=comicsdocument
+ _TypeDescription=Comic Books
+-MimeType=application/x-cbr;application/x-cbz;
++MimeType=application/x-cbr;application/x-cbz;application/x-cb7;
+Index: evinceed/configure.ac
+===================================================================
+--- evinceed/configure.ac	(revision 3065)
++++ evinceed/configure.ac	(working copy)
+@@ -408,7 +408,7 @@
+ 	EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES}image/tiff;"
+ fi
+ if test "x$enable_comics" = "xyes"; then
+-	EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES}application/x-cbr;application/x-cbz;"
++	EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES}application/x-cbr;application/x-cbz;application/x-cb7"
+ fi
+ if test "x$enable_pixbuf" = "xyes"; then
+ 	EVINCE_MIME_TYPES="${EVINCE_MIME_TYPES}image/*;"
+Index: evinceed/thumbnailer/evince-thumbnailer-comics.schemas.in
+===================================================================
+--- evinceed/thumbnailer/evince-thumbnailer-comics.schemas.in	(revision 3065)
++++ evinceed/thumbnailer/evince-thumbnailer-comics.schemas.in	(working copy)
+@@ -51,5 +51,31 @@
+             </locale>
+         </schema>
+ 
++
++	<schema>
++            <key>/schemas/desktop/gnome/thumbnailers/application@x-cb7/enable</key>
++            <applyto>/desktop/gnome/thumbnailers/application@x-cb7/enable</applyto>
++            <owner>evince</owner>
++            <type>bool</type>
++            <default>true</default>
++            <locale name="C">
++                <short></short>
++                <long></long>
++            </locale>
++        </schema>
++
++
++        <schema>
++            <key>/schemas/desktop/gnome/thumbnailers/application@x-cb7/command</key>
++            <applyto>/desktop/gnome/thumbnailers/application@x-cb7/command</applyto>
++            <owner>evince</owner>
++            <type>string</type>
++            <default>evince-thumbnailer -s %s %u %o</default>
++            <locale name="C">
++                <short></short>
++                <long></long>
++            </locale>
++        </schema>
++
+     </schemalist>
+ </gconfschemafile>

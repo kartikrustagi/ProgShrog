@@ -1,0 +1,15 @@
+<xml>
+	<filename>Will be used in the deleting of message</filename>
+	
+	<form_id>5</form_id>
+	
+	<topic>inbox mail</topic>
+	
+	<body>
+		<from>This will be the email id</from>
+		<subject>None</subject>
+		<details>None</details>
+		<upload_file_name>None</upload_file_name>
+		<upload_file>None</upload_file>	
+	</body>
+</xml>

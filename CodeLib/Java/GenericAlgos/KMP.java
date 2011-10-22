@@ -40,16 +40,16 @@ class KMP{
 	}
 	
 	public static void main(String[] args){
-		String w = "EXAMPLE";
+		String w = "ABCAABC";//"EXAMPLE";
 		String s = "HERE IS A SIMPLE EXAMPLE";
-		/*
+		
 		int[] T = constructTable(w);
 		for(int i=0;i<w.length();i++){
 			System.out.print(T[i] + " ");
 		}
 		System.out.println();
-		*/
-		System.out.println(kmpSearch(s,w));
+		
+		//System.out.println(kmpSearch(s,w));
 	}
 
 }
